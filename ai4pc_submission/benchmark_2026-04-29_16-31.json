@@ -1,0 +1,408 @@
+{
+  "version": "2.0",
+  "format": "single-elimination",
+  "date": "2026-04-29T16:31:24.917948",
+  "config": {
+    "map": "maps/8x8/basesWorkers8x8.xml",
+    "max_cycles": 1500,
+    "games_per_matchup": 10
+  },
+  "anchors": {
+    "ai.RandomBiasedAI": {
+      "name": "RandomBiasedAI",
+      "weight": 10,
+      "tier": "easy"
+    },
+    "ai.abstraction.HeavyRush": {
+      "name": "HeavyRush",
+      "weight": 20,
+      "tier": "medium-hard"
+    },
+    "ai.abstraction.LightRush": {
+      "name": "LightRush",
+      "weight": 15,
+      "tier": "medium"
+    },
+    "ai.abstraction.WorkerRush": {
+      "name": "WorkerRush",
+      "weight": 15,
+      "tier": "medium"
+    },
+    "ai.competition.tiamat.Tiamat": {
+      "name": "Tiamat",
+      "weight": 20,
+      "tier": "hard"
+    },
+    "ai.coac.CoacAI": {
+      "name": "CoacAI",
+      "weight": 20,
+      "tier": "hard"
+    }
+  },
+  "agent_classes": {
+    "llama3.1:8b (AI4PC)": "ai.abstraction.submissions.ai4pc.AI4PC"
+  },
+  "benchmark_scores": {
+    "llama3.1:8b (AI4PC)": 79.0
+  },
+  "eliminated_at": {
+    "llama3.1:8b (AI4PC)": "Tiamat"
+  },
+  "opponent_breakdown": {
+    "llama3.1:8b (AI4PC)": {
+      "RandomBiasedAI": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 0,
+        "avg_game_score": 1.2,
+        "weighted_points": 12.0
+      },
+      "HeavyRush": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 0,
+        "avg_game_score": 1.2,
+        "weighted_points": 24.0
+      },
+      "LightRush": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 0,
+        "avg_game_score": 1.2,
+        "weighted_points": 18.0
+      },
+      "WorkerRush": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 0,
+        "avg_game_score": 1.0,
+        "weighted_points": 15.0
+      },
+      "Tiamat": {
+        "wins": 0,
+        "draws": 10,
+        "losses": 0,
+        "avg_game_score": 0.5,
+        "weighted_points": 10.0
+      }
+    }
+  },
+  "detailed_results": {
+    "llama3.1:8b (AI4PC)": {
+      "reference_games": {
+        "ai.RandomBiasedAI": [
+          {
+            "result": "win",
+            "ticks": 190,
+            "game_num": 1,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 320,
+            "game_num": 2,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 225,
+            "game_num": 3,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 435,
+            "game_num": 4,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 525,
+            "game_num": 5,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 380,
+            "game_num": 6,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 365,
+            "game_num": 7,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 305,
+            "game_num": 8,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 425,
+            "game_num": 9,
+            "opponent": "RandomBiasedAI"
+          },
+          {
+            "result": "win",
+            "ticks": 275,
+            "game_num": 10,
+            "opponent": "RandomBiasedAI"
+          }
+        ],
+        "ai.abstraction.HeavyRush": [
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 1,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 2,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 3,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 4,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 5,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 6,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 7,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 8,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 9,
+            "opponent": "HeavyRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 10,
+            "opponent": "HeavyRush"
+          }
+        ],
+        "ai.abstraction.LightRush": [
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 1,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 2,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 3,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 4,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 5,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 6,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 7,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 8,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 9,
+            "opponent": "LightRush"
+          },
+          {
+            "result": "win",
+            "ticks": 195,
+            "game_num": 10,
+            "opponent": "LightRush"
+          }
+        ],
+        "ai.abstraction.WorkerRush": [
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 1,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 2,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 3,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 4,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 5,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 6,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 7,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 8,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 9,
+            "opponent": "WorkerRush"
+          },
+          {
+            "result": "win",
+            "ticks": 1390,
+            "game_num": 10,
+            "opponent": "WorkerRush"
+          }
+        ],
+        "ai.competition.tiamat.Tiamat": [
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 1,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 2,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 3,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 4,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 5,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 6,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 7,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 8,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 9,
+            "opponent": "Tiamat"
+          },
+          {
+            "result": "draw",
+            "ticks": 1500,
+            "game_num": 10,
+            "opponent": "Tiamat"
+          }
+        ]
+      },
+      "llm_games": []
+    }
+  },
+  "head_to_head": []
+}

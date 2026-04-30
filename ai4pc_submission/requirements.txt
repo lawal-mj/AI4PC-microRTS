@@ -1,0 +1,2 @@
+# AI4PC dev dependencies. All scripts use only the Python stdlib.
+# Tested on Python 3.9+ (json, urllib, http.server, statistics).
